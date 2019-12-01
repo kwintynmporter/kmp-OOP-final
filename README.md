@@ -1,4 +1,3 @@
-# kmp-OOP-final
 # virtual omnichord
 
 Version 1 feature: Create a button that will produce sound in a frame. 
