@@ -1,6 +1,7 @@
 import java.applet.Applet;
 import java.applet.AudioClip;
 import java.awt.FlowLayout;
+import java.awt.GridLayout;
 import java.awt.event.*;
 import java.net.URL;
 import javax.swing.*;
@@ -17,7 +18,7 @@ public class MyChords extends JFrame implements ActionListener {
         btn2 = new JButton("A Sus 13"); 
         btn3 = new JButton("D Maj 9"); 
         setTitle("Omnichord v1.0"); 
-        setLayout(new FlowLayout());
+        setLayout(new GridLayout());
         getContentPane().add(btn1); 
         getContentPane().add(btn2); 
         getContentPane().add(btn3); 
@@ -82,6 +83,9 @@ public class MyChords extends JFrame implements ActionListener {
     }
     public static void main(String[] args) {
         System.out.println("Omnichord starting..."); 
+        System.out.println("  _      _      _" + "\n" +
+        ">(.)__ <(.)__ =(.)__" + "\n" + 
+        " (___/  (___/  (___/");
         MyChords tst = new MyChords(); 
         tst.setVisible(true); 
     }
