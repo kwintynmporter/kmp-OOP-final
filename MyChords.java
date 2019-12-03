@@ -25,7 +25,7 @@ public class MyChords extends JFrame implements ActionListener {
     }
     public void playSound() {
         try {
-            URL url = new URL("https://mustang-data-kmp.azurewebsites.net/faceslifted.wav"); 
+            URL url = new URL("https://mustang-data-kmp.azurewebsites.net/eMinor9.wav"); 
             AudioInputStream audioIn = AudioSystem.getAudioInputStream(url); 
             Clip clip = AudioSystem.getClip(); 
             clip.open(audioIn); 
