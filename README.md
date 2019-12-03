@@ -1,4 +1,6 @@
 # virtual omnichord
+To use this app, simply click on the button/panel of the chord you'd like to hear. 
+
 
 Version 1 feature: Create a button that will produce sound in a frame. 
 Future features: 
