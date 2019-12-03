@@ -35,7 +35,7 @@ public class MyChords extends JFrame implements ActionListener {
             System.out.println("Error with playing sound.");
             ex.printStackTrace( );
         }
-    } 
+    }
 
     public void actionPerformed(ActionEvent e){
         if (e.getSource() == btn1) {
@@ -43,7 +43,7 @@ public class MyChords extends JFrame implements ActionListener {
             //click.loop();
         }
         if (e.getSource() == btn2) {
-            //click.stop(); 
+
         }
     }
     public static void main(String[] args) {
