@@ -9,13 +9,13 @@ import javax.sound.sampled.*;
 
 public class MyChords extends JFrame implements ActionListener {
     JButton btn1, btn2; 
-    // AudioClip click; 
+    AudioClip click; 
 
     public MyChords(){
         setSize(800,800);
         btn1 = new JButton("test");
         btn2 = new JButton("stop test"); 
-        setTitle("Omnichordv1.0"); 
+        setTitle("Omnichord v1.0"); 
         setLayout(new FlowLayout());
         getContentPane().add(btn1); 
         getContentPane().add(btn2); 
@@ -23,12 +23,13 @@ public class MyChords extends JFrame implements ActionListener {
         btn1.addActionListener(MyChords.this); 
         setDefaultCloseOperation(EXIT_ON_CLOSE); 
     }
-    public void playSound(String soundName) {
+    public void playSound() {
         try {
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(soundName).getAbsoluteFile());
-            Clip clip = AudioSystem.getClip();
-            clip.open(audioInputStream);
-            clip.start();
+            URL url = new URL("https://mustang-data-kmp.azurewebsites.net/faceslifted.wav"); 
+            AudioInputStream audioIn = AudioSystem.getAudioInputStream(url); 
+            Clip clip = AudioSystem.getClip(); 
+            clip.open(audioIn); 
+            clip.start(); 
         }
         catch(Exception ex) {
             System.out.println("Error with playing sound.");
@@ -38,11 +39,11 @@ public class MyChords extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e){
         if (e.getSource() == btn1) {
-            playSound("test.wav"); 
-            click.loop();
+            playSound(); 
+            //click.loop();
         }
         if (e.getSource() == btn2) {
-            click.stop(); 
+            //click.stop(); 
         }
     }
     public static void main(String[] args) {
