@@ -83,9 +83,10 @@ public class MyChords extends JFrame implements ActionListener {
     }
     public static void main(String[] args) {
         System.out.println("Omnichord starting..."); 
-        System.out.println("  _      _      _" + "\n" +
-        ">(.)__ <(.)__ =(.)__" + "\n" + 
-        " (___/  (___/  (___/");
+        System.out.println("  _      _      _" + " " + "     _      _      _" + "\n" +
+        ">(.)__ <(.)__ =(.)__" + " " + ">(.)__ <(.)__ =(.)__" + "\n" + 
+        " (___/  (___/  (___/" + " " + " (___/  (___/  (___/" + "\n" +
+        "an internet connection is required for this program. Have fun!");
         MyChords tst = new MyChords(); 
         tst.setVisible(true); 
     }
